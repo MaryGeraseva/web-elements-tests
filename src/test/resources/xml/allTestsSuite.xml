@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="allTestsSuite" verbose="1" parallel="tests" thread-count="6">
+    <test name="CheckboxesTest">
+        <classes>
+            <class name="CheckboxesTests.CheckBoxesTest" />
+        </classes>
+    </test>
+    <test name="DragAndDropTest">
+        <classes>
+            <class name="DragAndDropTests.DragAndDropTest" />
+        </classes>
+    </test>
+    <test name="DropDownTest">
+        <classes>
+            <class name="DropDownTests.DropDownTest" />
+        </classes>
+    </test>
+    <test name="FileUploadTest">
+        <classes>
+            <class name="FileUploadTests.FileUploadTest" />
+        </classes>
+    </test>
+    <test name="FileUploadTestError">
+        <classes>
+            <class name="FileUploadTests.FileUploadTestError" />
+        </classes>
+    </test>
+    <test name="NegativeLogInTestsWithCSVData">
+        <classes>
+            <class name="FormAuthenticationTests.NegativeLogInTestsWithCSVData" />
+        </classes>
+    </test>
+    <test name="NegativeLogInTestsWithJsonData">
+        <classes>
+            <class name="FormAuthenticationTests.NegativeLogInTestsWithJsonData" />
+        </classes>
+    </test>
+    <test name="NegativeLogInTestsWithDataProvider">
+        <classes>
+            <class name="FormAuthenticationTests.NegativeLogInTestsWithDataProvider" />
+        </classes>
+    </test>
+    <test name="PositiveLogInTest">
+        <parameter name="username" value="tomsmith"/>
+        <parameter name="password" value="SuperSecretPassword!"/>
+        <classes>
+            <class name="FormAuthenticationTests.PositiveLogInTest" />
+        </classes>
+    </test>
+    <test name="HorizontalSliderTest">
+        <parameter name="value" value="2.5"/>
+        <classes>
+            <class name="HorizontalSliderTests.HorizontalSliderTest" />
+        </classes>
+    </test>
+    <test name="HoversTest">
+        <classes>
+            <class name="HoversTests.HoversTest" />
+         </classes>
+     </test>
+    <test name="IFrameTest">
+        <parameter name="InputText" value="text editor test"/>
+        <classes>
+            <class name="IFrameTests.IFrameTest" />
+        </classes>
+    </test>
+    <test name="JsAlertsAcceptTests">
+        <parameter name="text" value="accept alert test message"/>
+        <classes>
+            <class name="JsAlertsTests.JsAlertsAcceptTests" />
+          </classes>
+      </test>
+      <test name="JsAlertsDismissTests">
+          <classes>
+              <class name="JsAlertsTests.JsAlertsDismissTests" />
+          </classes>
+      </test>
+       <test name="JsErrorTest">
+           <classes>
+               <class name="JsErrorTests.JsErrorTest" />
+           </classes>
+       </test>
+    <test name="KeyPressesTest">
+        <parameter name="key" value=" Keys.SHIFT"/>
+        <classes>
+            <class name="KeyPressesTests.KeyPressesTest" />
+        </classes>
+    </test>
+       <test name="MultipleWindowsTests">
+           <classes>
+               <class name="MultipleWindowsTests.WindowTest" />
+           </classes>
+       </test>
+   </suite>

@@ -1,0 +1,30 @@
+[
+    {
+        "testId": "1",
+        "username": "test",
+        "password": "SuperSecretPassword!",
+        "expectedError": "Your username is invalid!",
+        "description": "invalid username test"
+    },
+    {
+        "testId": "2",
+        "username": "tomsmith",
+        "password": "test",
+        "expectedError": "Your password is invalid!",
+        "description": "invalid password test"
+    },
+    {
+        "testId": "3",
+        "username": "",
+        "password": "SuperSecretPassword!",
+        "expectedError": "Your username is invalid!",
+        "description": "empty username test"
+    },
+    {
+        "testId": "4",
+        "username": "tomsmith",
+        "password": "",
+        "expectedError": "Your password is invalid!",
+        "description": "empty password test"
+    }
+]
