@@ -32,7 +32,7 @@ public class WindowTest extends BaseTest {
 }
 
     @Step("verification new window by expected text")
-    private void assertWindowByExpectedText(String secondWindowContent, String secondWindowExpectedText) {
-        Assert.assertTrue(secondWindowContent.contains(secondWindowExpectedText), "didn't get expected  message");
+    private void assertWindowByExpectedText(String windowContent, String windowExpectedText) {
+        Assert.assertTrue(windowContent.contains(windowExpectedText), "didn't get expected  message");
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="allTestsSuite" verbose="1" parallel="tests" thread-count="6">
+<suite name="allTestsSuite" verbose="1" parallel="tests" thread-count="8">
     <test name="CheckboxesTest">
         <classes>
             <class name="CheckboxesTests.CheckBoxesTest" />

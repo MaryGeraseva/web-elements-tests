@@ -1,5 +1,5 @@
 .allure/*
 .idea/*
-.allure-results/*
-.target/*
+allure-results/*
+target/*
 webElementsTests.iml

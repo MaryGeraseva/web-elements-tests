@@ -22,19 +22,6 @@ public class BrowserDriverFactory {
     private Logger log = LogInstance.getLogger();
     private WebDriver driver;
 
-    /**System properties
-     * -Dselenium.server=grid
-     * -Dserver.url="http://localhost:4444/wd/hub"
-     * -Dselenium.browser=googlechrome
-     * -Dselenium.browser=firefox
-     * -Dselenium.browser=firefox.headless
-     * -Dselenium.browser=googlechrome.headless
-     * -Dselenium.browser=mobile
-     * -Dselenium.deviceName="Pixel 2"
-     * -Dselenium.deviceName="iPhone X"
-     * -Dselenium.server=grid -Dselenium.browser=googlechrome -Dserver.url="http://localhost:4444/wd/hub"
-     * */
-
     public WebDriver createBrowser() {
 
         String browser = getBrowserType();
