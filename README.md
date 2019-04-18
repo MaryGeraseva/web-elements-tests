@@ -30,29 +30,37 @@ There is also used Allure reporting features for showing the most important test
 2. create a new hub
   * open a new command line
   * create the hub
-  ```java -jar [$user.dir]\selenium-server-standalone-<version>.jar -role hub
-  ```
+```
+java -jar [$user.dir]\selenium-server-standalone-<version>.jar -role hub
+```
 3. open in browser server by URL for checking **http://localhost:4444/wd/hub**
 4. create the first node
-  * open a new command line and go to the project folder ```cd [$user.dir]/webElementsTests
-  ```
+  * open a new command line and go to the project folder 
+```
+ cd [$user.dir]/webElementsTests
+ ```
   * create the first default node
   * run the node with googlechrome browsers
-```java -Dwebdriver.chrome.driver=.\drivers\chromedriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5555
+```
+java -Dwebdriver.chrome.driver=.\drivers\chromedriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5555
 ```
   * or run the node with firefox browsers 
-```java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5555
+```
+java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5555
 ```
  5. create the second node
   * open a new command line and go to the project folder
- ```cd [$user.dir]/webElementsTests
- ```
+```
+cd [$user.dir]/webElementsTests
+```
   * create the second default node
   * run the node with googlechrome browsers
-```java -Dwebdriver.chrome.driver=.\drivers\chromedriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5556
+```
+java -Dwebdriver.chrome.driver=.\drivers\chromedriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5556
 ```
   * or run the node with firefox browsers
-```java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5556
+```
+java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5556
 ```
 6. go to grid hub console for cheking **http://localhost:4444/grid/console**
 
@@ -60,11 +68,10 @@ There is also used Allure reporting features for showing the most important test
 
 1. open command line
 2. go to the project folder
-
-```cd [$user.dir]**/webElementsTests
+```
+cd [$user.dir]/webElementsTests
 ```
 3. run testNG suite by default *(on googlechrome locally)* 
-
 ```mvn clean test -Dsurefire.suiteXmlFiles=.\src\test\resources\xml\allTestsSuite.xml
 ```
 or add parameters:
@@ -74,7 +81,8 @@ or add parameters:
   * run on googlechrome headless `-Dselenium.browser=googlechrome.headless`
   * run on firefox headless `-Dselenium.browser=firefox.headless`
   * run on googlechrome mobile emulation and add mobile device name 
-  ```-Dselenium.browser=mobile -Dselenium.deviceName="Pixel 2"
+  ```
+  -Dselenium.browser=mobile -Dselenium.deviceName="Pixel 2"
   ```
   *you can use any mobile device name from googlechrome list*
   
