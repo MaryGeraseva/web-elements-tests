@@ -72,7 +72,8 @@ java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\seleniu
 cd [$user.dir]/webElementsTests
 ```
 3. run testNG suite by default *(on googlechrome locally)* 
-```mvn clean test -Dsurefire.suiteXmlFiles=.\src\test\resources\xml\allTestsSuite.xml
+```
+mvn clean test -Dsurefire.suiteXmlFiles=.\src\test\resources\xml\allTestsSuite.xml
 ```
 or add parameters:
   * run on Selenium grid server `-Dselenium.server=grid -Dserver.url="http://localhost:4444/wd/hub"`
@@ -81,9 +82,7 @@ or add parameters:
   * run on googlechrome headless `-Dselenium.browser=googlechrome.headless`
   * run on firefox headless `-Dselenium.browser=firefox.headless`
   * run on googlechrome mobile emulation and add mobile device name 
-  ```
-  -Dselenium.browser=mobile -Dselenium.deviceName="Pixel 2"
-  ```
+  `-Dselenium.browser=mobile -Dselenium.deviceName="Pixel 2"`
   *you can use any mobile device name from googlechrome list*
   
 4. generate allure report `mvn allure:serve`
