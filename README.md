@@ -30,7 +30,8 @@ There is also used Allure reporting features for showing the most important test
 2. create a new hub
   * open a new command line
   * create the hub
-```java -jar [$user.dir]\selenium-server-standalone-<version>.jar -role hub```
+  
+  ```java -jar [$user.dir]\selenium-server-standalone-<version>.jar -role hub```
 3. open in browser server by URL for checking **http://localhost:4444/wd/hub**
 4. create the first node
   * open a new command line and go to the project folder
@@ -43,6 +44,7 @@ There is also used Allure reporting features for showing the most important test
   * or run the node with firefox browsers
   
 ```java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5555```
+
  5. create the second node
   * open a new command line and go to the project folder
   
