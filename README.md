@@ -15,16 +15,16 @@ There is also used Allure reporting features for showing the most important test
 
 ## Usage
 
-## How to run the project on Windows OS
+### How to run the project on Windows OS
 1. deploy Selenium grid server or skip this step and run locally
 2. run the test suite with parameters
 
-## How to deploy Selenium grid
+### How to deploy Selenium grid
 *(as an example locally with two nodes)*
 1. download [Selenium Standalone Server](https://www.seleniumhq.org/download/)
 2. create a new hub
   * open a new command line
-  ..* create the hub
+  * create the hub
 ```java -jar **[$user.dir]**\selenium-server-standalone-**<version>**.jar -role hub```
 3. open in browser server by URL for checking **http://localhost:4444/wd/hub**
 4. create the first node
@@ -45,7 +45,7 @@ There is also used Allure reporting features for showing the most important test
         'java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar **[$user.dir]**\selenium-server-standalone-**<version>**.jar -role node -hub http://localhost:4444/grid/register -port 5556'
 6. go to grid hub console for cheking **http://localhost:4444/grid/console**
 
-## How to run the tests suite
+### How to run the tests suite
 
 1. open command line
 2. go to the project folder
