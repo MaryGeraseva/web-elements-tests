@@ -1,18 +1,18 @@
-package Pages.Welcomepage;
+package pages.Welcomepage;
 
-import Pages.BasePage.BasePageObject;
-import Pages.CheckboxesPage.CheckboxesPage;
-import Pages.DragAndDropPage.DragAndDropPage;
-import Pages.DropdownPage.DropdownPage;
-import Pages.FileUploadPage.FileUploadPage;
-import Pages.FormAuthenticationPages.MainPage;
-import Pages.HorizontalSliderPage.HorizontalSliderPage;
-import Pages.HoversPage.HoversPage;
-import Pages.IFramePage.IFramePage;
-import Pages.JSErrorPage.JSErrorPage;
-import Pages.JsAlertsPage.JavaScriptAlertsPage;
-import Pages.KeyPressesPage.KeyPressesPage;
-import Pages.MultipluWindowsPage.FirstWindowPage;
+import pages.BasePage.BasePageObject;
+import pages.CheckboxesPage.CheckboxesPage;
+import pages.DragAndDropPage.DragAndDropPage;
+import pages.DropdownPage.DropdownPage;
+import pages.FileUploadPage.FileUploadPage;
+import pages.FormAuthenticationPages.MainPage;
+import pages.HorizontalSliderPage.HorizontalSliderPage;
+import pages.HoversPage.HoversPage;
+import pages.IFramePage.IFramePage;
+import pages.JSErrorPage.JSErrorPage;
+import pages.JsAlertsPage.JavaScriptAlertsPage;
+import pages.KeyPressesPage.KeyPressesPage;
+import pages.MultipluWindowsPage.FirstWindowPage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 

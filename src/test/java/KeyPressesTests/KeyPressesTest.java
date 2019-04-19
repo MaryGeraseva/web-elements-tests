@@ -1,8 +1,8 @@
 package KeyPressesTests;
 
 import BaseTests.BaseTest;
-import Pages.KeyPressesPage.KeyPressesPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.KeyPressesPage.KeyPressesPage;
+import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;

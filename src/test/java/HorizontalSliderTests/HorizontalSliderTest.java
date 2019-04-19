@@ -1,8 +1,8 @@
 package HorizontalSliderTests;
 
 import BaseTests.BaseTest;
-import Pages.HorizontalSliderPage.HorizontalSliderPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.HorizontalSliderPage.HorizontalSliderPage;
+import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

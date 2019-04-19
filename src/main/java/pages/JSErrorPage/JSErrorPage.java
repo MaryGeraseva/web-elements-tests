@@ -1,6 +1,6 @@
-package Pages.JSErrorPage;
+package pages.JSErrorPage;
 
-import Pages.BasePage.BasePageObject;
+import pages.BasePage.BasePageObject;
 
 public class JSErrorPage extends BasePageObject {
 

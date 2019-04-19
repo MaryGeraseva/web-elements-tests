@@ -1,6 +1,6 @@
-package Pages.MultipluWindowsPage;
+package pages.MultipluWindowsPage;
 
-import Pages.BasePage.BasePageObject;
+import pages.BasePage.BasePageObject;
 
 public class SecondWindowPage extends BasePageObject {
 

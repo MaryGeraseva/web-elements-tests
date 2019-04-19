@@ -1,6 +1,6 @@
-package Pages.HoversPage;
+package pages.HoversPage;
 
-import Pages.BasePage.BasePageObject;
+import pages.BasePage.BasePageObject;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

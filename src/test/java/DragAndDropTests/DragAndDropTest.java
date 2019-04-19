@@ -1,8 +1,8 @@
 package DragAndDropTests;
 
 import BaseTests.BaseTest;
-import Pages.DragAndDropPage.DragAndDropPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.DragAndDropPage.DragAndDropPage;
+import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

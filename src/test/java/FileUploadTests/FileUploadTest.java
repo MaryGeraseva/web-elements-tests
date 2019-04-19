@@ -1,8 +1,8 @@
 package FileUploadTests;
 
 import BaseTests.BaseTest;
-import Pages.FileUploadPage.FileUploadPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.FileUploadPage.FileUploadPage;
+import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

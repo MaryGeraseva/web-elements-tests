@@ -2,8 +2,8 @@ package FormAuthenticationTests;
 
 import BaseTests.BaseTest;
 import common.JsonDataProvider.JsonDataProvider;
-import Pages.FormAuthenticationPages.MainPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.FormAuthenticationPages.MainPage;
+import pages.Welcomepage.WelcomePage;
 import common.JsonDataProvider.UserLogInData;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;

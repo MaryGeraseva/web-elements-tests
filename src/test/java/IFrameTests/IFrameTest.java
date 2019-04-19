@@ -1,8 +1,8 @@
 package IFrameTests;
 
 import BaseTests.BaseTest;
-import Pages.IFramePage.IFramePage;
-import Pages.Welcomepage.WelcomePage;
+import pages.IFramePage.IFramePage;
+import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

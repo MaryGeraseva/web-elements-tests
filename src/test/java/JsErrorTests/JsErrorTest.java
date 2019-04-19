@@ -1,8 +1,8 @@
 package JsErrorTests;
 
 import BaseTests.BaseTest;
-import Pages.JSErrorPage.JSErrorPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.JSErrorPage.JSErrorPage;
+import pages.Welcomepage.WelcomePage;
 import common.TestUtilities;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;

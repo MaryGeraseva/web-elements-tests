@@ -1,9 +1,9 @@
 package MultipleWindowsTests;
 
 import BaseTests.BaseTest;
-import Pages.MultipluWindowsPage.FirstWindowPage;
-import Pages.MultipluWindowsPage.SecondWindowPage;
-import Pages.Welcomepage.WelcomePage;
+import pages.MultipluWindowsPage.FirstWindowPage;
+import pages.MultipluWindowsPage.SecondWindowPage;
+import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

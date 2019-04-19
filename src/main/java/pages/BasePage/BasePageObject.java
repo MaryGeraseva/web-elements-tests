@@ -1,4 +1,4 @@
-package Pages.BasePage;
+package pages.BasePage;
 
 import common.Driver;
 import common.LogInstance;

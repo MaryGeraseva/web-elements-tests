@@ -1,6 +1,6 @@
-package Pages.IFramePage;
+package pages.IFramePage;
 
-import Pages.BasePage.BasePageObject;
+import pages.BasePage.BasePageObject;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
