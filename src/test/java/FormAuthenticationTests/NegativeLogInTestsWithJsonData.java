@@ -1,6 +1,6 @@
 package FormAuthenticationTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import common.JsonDataProvider.JsonDataProvider;
 import pages.FormAuthenticationPages.MainPage;
 import pages.Welcomepage.WelcomePage;

@@ -1,6 +1,6 @@
 package DragAndDropTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.DragAndDropPage.DragAndDropPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

@@ -1,6 +1,6 @@
 package JsAlertsTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.JsAlertsPage.JavaScriptAlertsPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

@@ -1,6 +1,6 @@
 package KeyPressesTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.KeyPressesPage.KeyPressesPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

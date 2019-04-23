@@ -1,6 +1,6 @@
 package CheckboxesTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.CheckboxesPage.CheckboxesPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

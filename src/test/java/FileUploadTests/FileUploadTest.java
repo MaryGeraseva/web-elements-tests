@@ -1,6 +1,6 @@
 package FileUploadTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.FileUploadPage.FileUploadPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

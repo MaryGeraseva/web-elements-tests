@@ -1,6 +1,6 @@
 package IFrameTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.IFramePage.IFramePage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

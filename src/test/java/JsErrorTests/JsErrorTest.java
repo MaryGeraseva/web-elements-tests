@@ -1,6 +1,6 @@
 package JsErrorTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.JSErrorPage.JSErrorPage;
 import pages.Welcomepage.WelcomePage;
 import common.TestUtilities;

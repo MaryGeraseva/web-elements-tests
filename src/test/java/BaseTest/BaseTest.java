@@ -1,4 +1,4 @@
-package BaseTests;
+package BaseTest;
 
 import common.Driver;
 import common.LogInstance;

@@ -1,6 +1,6 @@
 package HorizontalSliderTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.HorizontalSliderPage.HorizontalSliderPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

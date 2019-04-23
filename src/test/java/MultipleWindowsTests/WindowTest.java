@@ -1,6 +1,6 @@
 package MultipleWindowsTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.MultipluWindowsPage.FirstWindowPage;
 import pages.MultipluWindowsPage.SecondWindowPage;
 import pages.Welcomepage.WelcomePage;

@@ -1,6 +1,6 @@
 package DropDownTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.DropdownPage.DropdownPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;

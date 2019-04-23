@@ -1,6 +1,6 @@
 package HoversTests;
 
-import BaseTests.BaseTest;
+import BaseTest.BaseTest;
 import pages.HoversPage.HoversPage;
 import pages.Welcomepage.WelcomePage;
 import io.qameta.allure.Description;
