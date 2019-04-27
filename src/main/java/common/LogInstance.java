@@ -27,7 +27,8 @@ public class LogInstance {
     public static synchronized Logger setContext(ITestContext context, Method method) {
         Thread.currentThread().setName(method.getName());
         Logger logger = LogManager.getLogger(String.format("- [%d] - %s", loggerId++, context.getCurrentXmlTest().getName()));
-        logger.addAppender(appenderConfig(context));
+        logger.addAppender(fileAppenderConfig(context));
+        logger.addAppender(consoleAppenderConfig());
         log.set(logger);
         return log.get();
     }
@@ -36,7 +37,7 @@ public class LogInstance {
         log.set(null);
     }
 
-    private static FileAppender appenderConfig(ITestContext context) {
+    private static FileAppender fileAppenderConfig(ITestContext context) {
 
         Integer testCaseId;
 
@@ -68,6 +69,14 @@ public class LogInstance {
         appender.setAppend(false);
         appender.activateOptions();
         return appender;
+    }
+
+    private static ConsoleAppender consoleAppenderConfig(){
+        ConsoleAppender consoleAppender = new ConsoleAppender();
+        consoleAppender.setLayout(new EnhancedPatternLayout("%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"));
+        consoleAppender.setThreshold(Level.TRACE);
+        consoleAppender.activateOptions();
+        return consoleAppender;
     }
 
     public static Integer getTestCaseId(ITestContext context) {
