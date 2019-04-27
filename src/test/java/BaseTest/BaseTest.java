@@ -17,7 +17,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Listeners({TestListener.class})
@@ -37,13 +36,7 @@ public class BaseTest {
     @AfterMethod
     public void tearDown(Method method, ITestContext context) {
         log.info("tearDown " + method.getName());
-
-        try {
-            attachLog(getLogPath(context));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        attachLog(getLogPath(context));
         driver.quit();
         Driver.resetDriver();
         LogInstance.resetLog();
@@ -53,10 +46,11 @@ public class BaseTest {
         driver.manage().window().maximize();
     }
 
-    public void attachLog(String path) throws IOException {
-        Path content = Paths.get(path);
-        try (InputStream inputStream = Files.newInputStream(content)) {
+    public void attachLog(String path) {
+        try (InputStream inputStream = Files.newInputStream(Paths.get(path))) {
             Allure.addAttachment("Logs", inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

@@ -57,7 +57,7 @@ public class TestListener implements ITestListener {
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshot(byte[] screenShot) {
+    private byte[] saveScreenshot(byte[] screenShot) {
         return screenShot;
     }
 
