@@ -1,6 +1,7 @@
 package common;
 
 import org.apache.log4j.*;
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestContext;
 
 import java.io.File;

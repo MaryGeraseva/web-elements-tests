@@ -1,9 +1,9 @@
 package common;
 
-public interface BrowserTypes {
-    String FIREFOX = "firefox";
-    String GOOGLECHROME = "googlechrome";
-    String FIREFOX_HEADLESS = "firefox.headless";
-    String GOOGLECHROME_HEADLESS = "googlechrome.headless";
-    String GOOGLECHROME_MOBILE = "mobile";
+public final class BrowserTypes {
+    public static final String FIREFOX = "firefox";
+    public static final String GOOGLECHROME = "googlechrome";
+    public static final String FIREFOX_HEADLESS = "firefox.headless";
+    public static final String GOOGLECHROME_HEADLESS = "googlechrome.headless";
+    public static final String GOOGLECHROME_MOBILE = "mobile";
 }

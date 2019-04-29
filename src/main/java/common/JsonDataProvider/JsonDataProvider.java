@@ -26,7 +26,7 @@ public class JsonDataProvider {
             list = gson.fromJson(reader, type);
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         return list.iterator();
     }
