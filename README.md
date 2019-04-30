@@ -36,7 +36,7 @@ java -jar [$user.dir]\selenium-server-standalone-<version>.jar -role hub
  cd [$user.dir]/webElementsTests
 ` 
   * create the first default node  
-    * run the node with googlechrome browsers   
+    * run the node with chrome browsers   
  `
 java -Dwebdriver.chrome.driver=.\drivers\chromedriver.exe -jar [$user.dir]\selenium-server-standalone-<version>.jar -role node -hub http://localhost:4444/grid/register -port 5555
 `   
@@ -46,7 +46,7 @@ java -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -jar [$user.dir]\seleniu
 `
 * create the second node  
 repeat the previous step and just change port `-port 5555` to `-port 5556`  
-* go to grid hub console for cheking **http://localhost:4444/grid/console**
+* go to grid hub console for checking **http://localhost:4444/grid/console**
 
 ### How to run the tests suite  
 * open command line
@@ -54,19 +54,19 @@ repeat the previous step and just change port `-port 5555` to `-port 5556`
 `
 cd [$user.dir]/webElementsTests
 `
-* run testNG suite by default *(on googlechrome locally)*   
+* run testNG suite by default *(on chrome locally)*   
 `
 mvn clean test -Dsurefire.suiteXmlFiles=.\src\test\resources\xml\allTestsSuite.xml
 `  
 or add parameters:
   * run on Selenium grid server `-Dselenium.server=grid -Dserver.url="http://localhost:4444/wd/hub"`
-  * run on googlechrome `-Dselenium.browser=googlechrome`
+  * run on chrome `-Dselenium.browser=chrome`
   * run on firefox `-Dselenium.browser=firefox`
-  * run on googlechrome headless `-Dselenium.browser=googlechrome.headless`
+  * run on chrome headless `-Dselenium.browser=chrome.headless`
   * run on firefox headless `-Dselenium.browser=firefox.headless`
-  * run on googlechrome mobile emulation and add mobile device name   
-  `-Dselenium.browser=mobile -Dselenium.deviceName="Pixel 2"`  
-  *you can use any mobile device name from googlechrome list*
+  * run on chrome mobile emulation and add mobile device name   
+  `-Dselenium.browser=chrome.mobile -Dselenium.deviceName="Pixel 2"`  
+  *you can use any mobile device name from chrome list*
 * generate allure report `mvn allure:serve`
 
 ## For feedback

@@ -22,8 +22,8 @@ import java.nio.file.Paths;
 @Listeners({TestListener.class})
 public class BaseTest {
 
-    public WebDriver driver;
-    public Logger log;
+    protected WebDriver driver;
+    protected Logger log;
 
     @BeforeMethod
     public void setUp(Method method, ITestContext context, Object[] testData) {
@@ -37,16 +37,16 @@ public class BaseTest {
     public void tearDown(Method method, ITestContext context) {
         log.info("tearDown " + method.getName());
         attachLog(getLogPath(context));
-        driver.quit();
         Driver.resetDriver();
         LogInstance.resetLog();
+        driver.quit();
     }
 
-    public void maximizeWindow() {
+    private void maximizeWindow() {
         driver.manage().window().maximize();
     }
 
-    public void attachLog(String path) {
+    private void attachLog(String path) {
         try (InputStream inputStream = Files.newInputStream(Paths.get(path))) {
             Allure.addAttachment("Logs", inputStream);
         } catch (IOException e) {

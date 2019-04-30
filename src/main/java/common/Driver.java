@@ -21,7 +21,7 @@ public class Driver {
     }
 
     private static WebDriver createWebDriver() {
-        BrowserDriverFactory browserDriverFactory = new BrowserDriverFactory();
-        return browserDriverFactory.createBrowser();
+        return new DriverFactory().createDriver();
     }
+
 }

@@ -1,11 +1,9 @@
 package common;
 
 import org.apache.log4j.*;
-import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestContext;
 
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -54,14 +52,7 @@ public class LogInstance {
         String path = String.format("%s\\target\\logs\\methods\\%s\\%d#%s.log",
                     System.getProperty("user.dir"), context.getCurrentXmlTest().getName(), testCaseId, Thread.currentThread().getName());
 
-
-        try {
-            File file = new File(path);
-            file.getParentFile().mkdirs();
-            file.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new File(path);
 
         FileAppender appender = new FileAppender();
         appender.setFile(path);

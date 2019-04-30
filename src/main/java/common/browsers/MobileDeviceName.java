@@ -1,4 +1,4 @@
-package common;
+package common.browsers;
 
 public final class MobileDeviceName {
     public static final String IPAD = "iPad";
