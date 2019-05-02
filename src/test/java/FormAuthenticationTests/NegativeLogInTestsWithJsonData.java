@@ -1,10 +1,10 @@
 package FormAuthenticationTests;
 
 import BaseTest.BaseTest;
-import common.JsonDataProvider.JsonDataProvider;
+import common.dataProviders.JsonDataProvider;
 import pages.FormAuthenticationPages.MainPage;
 import pages.Welcomepage.WelcomePage;
-import common.JsonDataProvider.UserLogInData;
+import common.dataProviders.UserLogInData;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

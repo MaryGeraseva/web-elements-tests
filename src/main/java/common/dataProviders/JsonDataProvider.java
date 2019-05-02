@@ -1,4 +1,4 @@
-package common.JsonDataProvider;
+package common.dataProviders;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class JsonDataProvider {
             Type type = new TypeToken<Collection<UserLogInData>>(){}.getType();
             list = gson.fromJson(reader, type);
 
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return list.iterator();

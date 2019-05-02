@@ -1,6 +1,6 @@
 package common.browsers;
 
-import common.LogInstance;
+import common.logger.LogInstance;
 import org.apache.log4j.Logger;
 
 public class BrowserFactory {

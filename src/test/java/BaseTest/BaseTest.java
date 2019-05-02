@@ -1,7 +1,7 @@
 package BaseTest;
 
-import common.Driver;
-import common.LogInstance;
+import common.drivers.Driver;
+import common.logger.LogInstance;
 import common.TestListener;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
@@ -29,7 +29,7 @@ public class BaseTest {
     public void setUp(Method method, ITestContext context, Object[] testData) {
         log = LogInstance.setContext(context, method);
         driver = Driver.getDriver();
-        maximizeWindow();
+//        maximizeWindow();
         log.info("setUp " + method.getName());
     }
 
@@ -56,7 +56,8 @@ public class BaseTest {
 
     private String getLogPath(ITestContext context) {
         return  String.format("%s\\target\\logs\\methods\\%s\\%d#%s.log",
-                System.getProperty("user.dir"), context.getCurrentXmlTest().getName(), LogInstance.getTestCaseId(context), Thread.currentThread().getName());
+                System.getProperty("user.dir"), context.getCurrentXmlTest().getName(),
+                LogInstance.getTestCaseId(context), Thread.currentThread().getName());
     }
 
     @Step("verification of page by current url")

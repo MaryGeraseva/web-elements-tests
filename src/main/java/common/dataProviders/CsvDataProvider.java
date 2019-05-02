@@ -1,4 +1,4 @@
-package common;
+package common.dataProviders;
 
 import com.opencsv.CSVReader;
 import org.testng.annotations.DataProvider;

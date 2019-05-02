@@ -1,6 +1,7 @@
-package common;
+package common.drivers;
 
 import common.browsers.BrowserFactory;
+import common.logger.LogInstance;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;

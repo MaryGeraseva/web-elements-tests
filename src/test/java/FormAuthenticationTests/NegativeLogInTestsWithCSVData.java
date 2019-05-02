@@ -3,7 +3,7 @@ package FormAuthenticationTests;
 import BaseTest.BaseTest;
 import pages.FormAuthenticationPages.MainPage;
 import pages.Welcomepage.WelcomePage;
-import common.CsvDataProvider;
+import common.dataProviders.CsvDataProvider;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;

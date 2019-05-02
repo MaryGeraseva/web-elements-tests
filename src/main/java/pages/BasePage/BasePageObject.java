@@ -1,7 +1,7 @@
 package pages.BasePage;
 
-import common.Driver;
-import common.LogInstance;
+import common.drivers.Driver;
+import common.logger.LogInstance;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;

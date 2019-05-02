@@ -1,4 +1,4 @@
-package common.JsonDataProvider;
+package common.dataProviders;
 
 import java.io.Serializable;
 

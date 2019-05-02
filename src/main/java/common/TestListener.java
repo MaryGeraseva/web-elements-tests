@@ -1,6 +1,6 @@
 package common;
 
-import io.qameta.allure.Attachment;
+import common.logger.LogInstance;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -12,7 +12,7 @@ public class TestListener implements ITestListener {
     private Logger log;
     private TestUtilities utilities = new TestUtilities();
 
-    String screenshotPath= String.format("%s\\target\\test-output\\screenshots\\%s\\%s\\%s.png",
+    private String screenshotPath= String.format("%s\\target\\test-output\\screenshots\\%s\\%s\\%s.png",
             System.getProperty("user.dir"), utilities.getTodayDate(), testMethodName, utilities.getSystemTime());
 
     @Override
@@ -30,7 +30,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         utilities.getScreenshotFile(screenshotPath);
-        saveScreenshot(utilities.getScreenshotByte());
+        utilities.saveScreenshot(utilities.getScreenshotByte());
         log.info("[test " + testMethodName + " failed]");
         getErrorLog(iTestResult);
     }
@@ -54,11 +54,6 @@ public class TestListener implements ITestListener {
     public void onTestSkipped(ITestResult iTestResult) {
         this.testMethodName = iTestResult.getMethod().getMethodName();
         log.info("[test " + testMethodName + " skipped]");
-    }
-
-    @Attachment(value = "Page screenshot", type = "image/png")
-    private byte[] saveScreenshot(byte[] screenShot) {
-        return screenShot;
     }
 
     private void getErrorLog(ITestResult iTestResult) {
